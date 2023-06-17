@@ -21,6 +21,9 @@ open_homepage(driver)
 signin_test(driver) # hcaptcha automation not implemented. solve it manually!
 # check_broken_link(driver)
 
+# tasks after signed in will be procced blow
+
+
 # all tasks are completed
 print("All tasks are completed")
 time.sleep(10)
