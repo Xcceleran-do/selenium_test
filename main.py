@@ -14,8 +14,8 @@ driver = webdriver.Chrome(options=options)
 
 open_homepage(driver)
 
-signup_test(driver)
-signin_test(driver)
+# signup_test(driver)
+signin_test(driver) # hcaptcha automation not implemented. solve it manually!
 
 # all tasks are completed
 print("All tasks are completed")

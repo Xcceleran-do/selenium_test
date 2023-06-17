@@ -3,7 +3,7 @@ import time
 def open_homepage(driver):
     driver.get("https://staging.mindplex.ai/")
 
-    time.sleep(10)
+    time.sleep(6)
 
     # button2 = driver.find_element(By.ID, "signin")
     # time.sleep(15)
