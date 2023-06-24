@@ -4,7 +4,7 @@ import os
 from selenium.webdriver.chrome.options import Options
 
 from homepage.open import *
-from homepage.search import search_test
+from search_page.search import search_test
 from homepage.signup import *
 from homepage.signin import *
 from shared.broken_link_check import *
