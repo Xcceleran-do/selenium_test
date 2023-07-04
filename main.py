@@ -8,6 +8,8 @@ from search_page.search import search_test
 from homepage.signup import *
 from homepage.signin import *
 from shared.broken_link_check import *
+from single_page.open_post import *
+from single_page.interact import *
 
 options = Options()
 options.add_argument("--incognito")
@@ -24,9 +26,16 @@ signin_test(driver) # hcaptcha automation not implemented. solve it manually!
 
 # tasks after signed in will be procced blow
 
+#open_single_post(driver)
+#interaction_test(driver)
+
 # the search test below can be executed without signing in.
 # one can comment out the signIn test above and only test for the search functionality.
 # search_test(driver)
+
+
+
+
 
 # all tasks are completed
 print("All tasks are completed")
