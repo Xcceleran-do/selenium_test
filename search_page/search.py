@@ -1,3 +1,4 @@
+import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -35,6 +36,7 @@ def search_by_keyword(driver):
     assert search_heading.text.lower().find("test") != -1, "Search likely did not work. " \
         "Heading of the search page does not contain the keyword we searched for."
     print("Search by pressing enter key worked successfully.")
+    time.sleep(2)
     
     # now let's click on the search button to perform a search
     search_button = driver.find_element(By.XPATH, "//input[@type='button' and @class='trip-search-btn' and @value='search']")
@@ -43,6 +45,8 @@ def search_by_keyword(driver):
     search_input.clear()
     search_input.send_keys("mindplex")
     search_button.click()
+    time.sleep(6)
+
     # let's see if the heading of the search page contains the keyword we searched for.
     # this is how we know the search worked (at least for now)
     search_heading = driver.find_element(By.XPATH, "//h1[@class='search-content-indicator']")
@@ -51,6 +55,7 @@ def search_by_keyword(driver):
     "Search likely did not work by clicking on the search button. " \
     "Heading of the search page does not contain the keyword we searched for."
     print("Search by clicking on the search button worked successfully.")
+    time.sleep(3)
 
 def search_test(driver):
     go_to_search_page(driver)
