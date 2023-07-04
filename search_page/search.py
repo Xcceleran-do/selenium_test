@@ -58,6 +58,8 @@ def search_by_keyword(driver):
     time.sleep(3)
 
 def search_test(driver):
+    # a time gap before starting search test
+    time.sleep(2)
     go_to_search_page(driver)
     search_by_keyword(driver)
 

@@ -22,15 +22,11 @@ open_homepage(driver)
 signin_test(driver) # hcaptcha automation not implemented. solve it manually!
 # check_broken_link(driver)
 
-# a time gap for the sign-in modal to fully close
-time.sleep(2)
+# tasks after signed in will be procced blow
 
 # the search test below can be executed without signing in.
 # one can comment out the signIn test above and only test for the search functionality.
-search_test(driver)
-
-# tasks after signed in will be procced blow
-
+# search_test(driver)
 
 # all tasks are completed
 print("All tasks are completed")
