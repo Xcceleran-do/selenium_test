@@ -39,7 +39,7 @@ def login_by_using_username_password(driver):
 
     print("Filled login fields successfully")
     # hcaptcha automation not implemented. solve it manually
-    time.sleep(15)
+    time.sleep(120)
 
     # Click the signin button
     signin_button = driver.find_element(By.ID, "wp-submit")
